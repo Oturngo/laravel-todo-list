@@ -11,10 +11,10 @@
             @if (count($todos) > 0)
               <ul class="list-group">
                 @foreach ($todos as $todo)
-                  <li class="list-group-item">
+                  <li class="list-group-item list-group-item-action">
                     <div>
                       <a href="#collapse-id-{{ $todo->id }}" data-toggle="collapse" >{{ $todo->title }}</a>
-                      <div class="btn-group btn-group-sm float-right" role="group" aria-label="Basic example">
+                      <div class="btn-group btn-group-sm float-right ml-3" role="group" aria-label="Basic example">
                       <a href="/todo/{{ $todo->id }}" class="btn btn-secondary"><i class="fa fa-pencil"></i></a>
                       <button class="btn btn-secondary todo-deleted-btn btn-danger" data-id="{{ $todo->id }}"><i class="fa fa-trash"></i></button>
                       </div>

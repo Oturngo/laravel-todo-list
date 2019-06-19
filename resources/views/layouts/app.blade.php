@@ -11,21 +11,15 @@
 </head>
 <body>
     {{-- nav bar --}}
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3">
-          <ul class="nav justify-content-center">
-            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/todo/active" class="nav-link">Active</a></li>
-            <li class="nav-item"><a href="/todo/done" class="nav-link">Done</a></li>
-            <li class="nav-item"><a href="/todo/delete" class="nav-link">Deleted</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <ul class="navbar-nav ">
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/todo/active" class="nav-link">Active</a></li>
+          <li class="nav-item"><a href="/todo/done" class="nav-link">Done</a></li>
+          <li class="nav-item"><a href="/todo/delete" class="nav-link">Deleted</a></li>
+        </ul>
+    </nav>    
     @include('layouts.form-new-todo')
-
 
     
     @yield('content')
