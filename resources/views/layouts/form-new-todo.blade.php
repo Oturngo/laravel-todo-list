@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container mt-3">
   <div class="row">
     <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3">
       {{-- button trigger modal --}}
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">New</button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> New</button>
     </div>
   </div>
 </div>
